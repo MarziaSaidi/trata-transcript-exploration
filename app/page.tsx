@@ -17,10 +17,11 @@ export default function Home() {
               Observation
             </dt>
             <dd className="text-[13px] leading-relaxed text-ink-muted">
-              On trata.com, three sample transcripts are readable without an
-              account. Each one presents a real debate as a continuous block
-              of dialogue, with no structure layered on top to show what the
-              debate actually is.
+              On trata.com, the public transcript samples present analyst
+              debates primarily as continuous dialogue. The ticker, date, and
+              stance are visible, but there is little structure to help a
+              reader understand the debate before reading through the
+              conversation.
             </dd>
           </div>
           <div>
@@ -29,8 +30,8 @@ export default function Home() {
             </dt>
             <dd className="text-[13px] leading-relaxed text-ink-muted">
               If a reader could see the investment debate first and jump
-              directly to the supporting evidence, they might decide faster
-              whether a conversation deserves a deeper read.
+              directly to the supporting evidence, they might be able to
+              decide faster whether a conversation deserves a deeper read.
             </dd>
           </div>
           <div>
@@ -38,8 +39,9 @@ export default function Home() {
               Exploration
             </dt>
             <dd className="text-[13px] leading-relaxed text-ink-muted">
-              I built a working transcript reader around that idea, with an
-              original, illustrative conversation — not real Trata content.
+              I built a working transcript reader around that idea, using an
+              original illustrative conversation rather than real Trata
+              content.
             </dd>
           </div>
         </dl>
@@ -55,40 +57,30 @@ export default function Home() {
             Why it’s built this way
           </h2>
           <p className="text-[13px] leading-relaxed text-ink-muted mb-2">
-            The summary isn’t a generic AI recap — every point links to the
-            exact passage that supports it, so skimming it is never
-            disconnected from the actual conversation. Clicking a point
-            scrolls to and highlights that passage; the summary rail tracks
-            which passage you’re reading as you scroll, so orientation in a
-            long call doesn’t require a separate table of contents.
+            The summary isn’t a generic recap. Every point links directly to
+            the passage that supports it, so a reader can move from thesis →
+            evidence without losing context.
+          </p>
+          <p className="text-[13px] leading-relaxed text-ink-muted mb-2">
+            Clicking a point scrolls to and highlights the supporting
+            passage. As you read, the summary rail tracks your position in
+            the conversation so you can stay oriented without navigating a
+            separate table of contents.
           </p>
           <p className="text-[13px] leading-relaxed text-ink-muted">
-            Everything here is client-rendered against static, original data —
-            no backend was invented. Loading, error, and empty states are
-            real and reachable at{" "}
-            <code className="font-mono text-[12px] bg-accent-soft text-accent-ink px-1 py-0.5 rounded-sm">
-              ?state=loading
-            </code>
-            ,{" "}
-            <code className="font-mono text-[12px] bg-accent-soft text-accent-ink px-1 py-0.5 rounded-sm">
-              ?state=error
-            </code>{" "}
-            and{" "}
-            <code className="font-mono text-[12px] bg-accent-soft text-accent-ink px-1 py-0.5 rounded-sm">
-              ?state=empty
-            </code>
-            .
+            The prototype is intentionally small: one research conversation,
+            one core interaction, no invented backend.
           </p>
         </div>
 
         <p className="mt-8 text-[11px] leading-relaxed text-ink-muted max-w-2xl">
-          I don’t have a Trata account, so this is built against what’s
-          publicly visible on trata.com — not the signed-in product, which
-          may already look different. Illustrative content written for this
-          exploration — Brightline Fitness (BRTL) is a fictional company, and
-          no proprietary Trata transcript text is reproduced here. Built by
-          Marzia Saidi as an unsolicited exploration for Trata’s Founding
-          Product Designer / Design Engineer role.
+          I built it against Trata’s publicly visible experience rather than
+          the signed-in product, so this is an exploration — not a claim
+          about how the private product currently works. The conversation is
+          entirely original and illustrative; Brightline Fitness (BRTL) is
+          fictional and no proprietary Trata transcript text is reproduced.
+          Built by Marzia Saidi as an unsolicited product exploration for
+          Trata’s Founding Product Designer / Design Engineer role.
         </p>
       </div>
     </main>
